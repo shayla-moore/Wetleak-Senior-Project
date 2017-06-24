@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to WetLeak"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="13dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type Registered Patient Here: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/tvPatientMessage"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvWelcomeMsg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Click Here to Create a New Patient Portfolio"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/tvNewPatientMessage"
+        android:textColor="#000000"
+        android:layout_above="@+id/bNewPatient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+    <EditText
+        android:id="@+id/etPreviousPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:layout_below="@+id/tvPatientMessage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bPreviousPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@+id/tvPatientMessage"
+        android:layout_marginTop="44dp"
+        android:layout_alignRight="@+id/tvPatientMessage"
+        android:layout_alignEnd="@+id/tvPatientMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bNewPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tvPatientMessage"
+        android:layout_alignEnd="@+id/tvPatientMessage" />
+
+</RelativeLayout>
